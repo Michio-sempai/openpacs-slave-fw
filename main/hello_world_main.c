@@ -12,6 +12,10 @@
 #include "esp_chip_info.h"
 #include "esp_flash.h"
 #include "esp_system.h"
+#include "osdp.h"
+#include "freertos/task.h"
+
+
 
 void app_main(void)
 {
@@ -48,5 +52,11 @@ void app_main(void)
     }
     printf("Restarting now.\n");
     fflush(stdout);
+
+
+    libosdp_init();
+    xTaskCreate(libosdp_task, "osdp_task", 4096, NULL, 5, NULL);
+
+
     esp_restart();
 }

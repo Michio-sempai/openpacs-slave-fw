@@ -1,0 +1,86 @@
+menu "Wiegand IO config"
+
+# ---------------- WG1 ----------------
+choice
+    prompt "Режим работы 1 WG интерфейса"
+    default WIEGAND_1_MODE_OUT
+    help
+        Выберите режим работы для 1-го интерфейса Wiegand (IN или OUT).
+
+config WIEGAND_1_MODE_IN
+    bool "IN"
+
+config WIEGAND_1_MODE_OUT
+    bool "OUT"
+
+endchoice
+
+config WIEGAND_1_MODE
+    string
+    default "IN"  if WIEGAND_1_MODE_IN
+    default "OUT" if WIEGAND_1_MODE_OUT
+
+
+# ---------------- WG2 ----------------
+choice
+    prompt "Режим работы 2 WG интерфейса"
+    default WIEGAND_2_MODE_OUT
+    help
+        Выберите режим работы для 2-го интерфейса Wiegand (IN или OUT).
+
+config WIEGAND_2_MODE_IN
+    bool "IN"
+
+config WIEGAND_2_MODE_OUT
+    bool "OUT"
+
+endchoice
+
+config WIEGAND_2_MODE
+    string
+    default "IN"  if WIEGAND_2_MODE_IN
+    default "OUT" if WIEGAND_2_MODE_OUT
+
+
+# ---------------- WG3 ----------------
+choice
+    prompt "Режим работы 3 WG интерфейса"
+    default WIEGAND_3_MODE_OUT
+    help
+        Выберите режим работы для 3-го интерфейса Wiegand (IN или OUT).
+
+config WIEGAND_3_MODE_IN
+    bool "IN"
+
+config WIEGAND_3_MODE_OUT
+    bool "OUT"
+
+endchoice
+
+config WIEGAND_3_MODE
+    string
+    default "IN"  if WIEGAND_3_MODE_IN
+    default "OUT" if WIEGAND_3_MODE_OUT
+
+
+# ---------------- WG4 ----------------
+choice
+    prompt "Режим работы 4 WG интерфейса"
+    default WIEGAND_4_MODE_OUT
+    help
+        Выберите режим работы для 4-го интерфейса Wiegand (IN или OUT).
+
+config WIEGAND_4_MODE_IN
+    bool "IN"
+
+config WIEGAND_4_MODE_OUT
+    bool "OUT"
+
+endchoice
+
+config WIEGAND_4_MODE
+    string
+    default "IN"  if WIEGAND_4_MODE_IN
+    default "OUT" if WIEGAND_4_MODE_OUT
+
+endmenu
