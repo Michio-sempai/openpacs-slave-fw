@@ -1,0 +1,32 @@
+
+build/
+.env
+
+# Binaries and executables
+*.exe
+*.out
+*.so
+*.dll
+*.dylib
+
+# Object files
+*.o
+*.obj
+
+# Debug/build directories
+build/
+Debug/
+Release/
+
+# IDE files (e.g., Visual Studio)
+.vs/
+*.suo
+*.sln
+
+# Other common files
+*.dSYM/
+*.swp
+*~
+
+# Temporary files
+*.tmp
