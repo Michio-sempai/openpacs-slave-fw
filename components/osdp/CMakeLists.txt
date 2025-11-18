@@ -24,7 +24,7 @@ target_sources(
 target_include_directories(
     ${COMPONENT_LIB} PUBLIC
     ${LIBOSDP_DIR}/include
-    ${LIBOSDP_DIR}/utils    
+    ${LIBOSDP_DIR}/utils/include    
     )
 
 # ⚙️ Переназначаем внутренние макросы логирования libosdp на ESP_LOGx

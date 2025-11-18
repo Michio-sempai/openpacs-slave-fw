@@ -12,7 +12,7 @@
 #include "esp_chip_info.h"
 #include "esp_flash.h"
 #include "esp_system.h"
-#include "osdp.h"
+#include "esp_osdp.h"
 #include "freertos/task.h"
 
 

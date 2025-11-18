@@ -1,7 +1,7 @@
 {
   "C_Cpp.intelliSenseEngine": "default",
   "idf.espIdfPathWin": "C:\\Users\\michi\\esp\\v5.5.1\\esp-idf",
-  "idf.pythonInstallPath": "C:\\Users\\michi\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+  "idf.pythonInstallPath": "/usr/bin/python3",
   "idf.openOcdConfigs": [
     "board/esp32c3-builtin.cfg"
   ],
@@ -18,6 +18,9 @@
   "files.associations": {
     "osdp_port.h": "c",
     "uart.h": "c",
-    "esp_log.h": "c"
+    "esp_log.h": "c",
+    "sdkconfig.h": "c",
+    "task.h": "c",
+    "esp_osdp.h": "c"
   }
 }

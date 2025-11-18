@@ -9,12 +9,8 @@
 typedef enum {
     IN = 0,
     OUT = 1
-} WIEGAND_INTERFACE_MODE
+} WIEGAND_INTERFACE_MODE;
 
-typedef struct wiegand
-{
-    /* data */
-};
 
 
 
